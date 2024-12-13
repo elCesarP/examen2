@@ -1,0 +1,91 @@
+nav {
+  background-color: #343a40;
+  padding: 1rem;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #f8f9fa;
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #007bff;
+          color: #fff;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 1.5rem;
+}
+
+.registro-form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  .form-label {
+    font-weight: bold;
+    color: #343a40;
+  }
+
+  .form-control {
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  .form-text {
+    font-size: 0.875rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+      background-color: #6c757d;
+    }
+
+    &:hover:enabled {
+      background-color: #0056b3;
+    }
+  }
+
+  .alert {
+    padding: 0.75rem;
+    border-radius: 4px;
+  }
+}
+
